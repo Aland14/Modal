@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/css/bootstrap.min.css">
+    <title>MyModal</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Listas de Clientes</h1>
+        <table class="table table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>IdPersona</th>
+                    <th>Nombre</th>
+                    <th>Apaternos</th>
+                    <th>Amaterno</th>
+                    <th>Sexo</th>
+                    <th>Edad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1</th>
+                    <th>Alan</th>
+                    <th>Enriquez</th>
+                    <th>Barrientos</th>
+                    <th>Masculino</th>
+                    <th>19</th>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <th>Carlos</th>
+                    <th>Gutierrez</th>
+                    <th>Garcia</th>
+                    <th>Masculino</th>
+                    <th>18</th>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <th>Tomas</th>
+                    <th>Lugo</th>
+                    <th>Flores</th>
+                    <th>Masculino</th>
+                    <th>20</th>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <th>Anahi</th>
+                    <th>Enriquez</th>
+                    <th>Barrientos</th>
+                    <th>Femenino</th>
+                    <th>20</th>
+                </tr>
+            </tbody>
+        </table>
+
+        <button type="button" class="btn-outline-success btn-lg" data-bs-toggle="modal" data-bs-target="#MyModal">Nuevo Cliente</button>
+        <button type="button" class="btn-outline-warning btn-lg">Editar Cliente</button>
+        <button type="button" class="btn-outline-danger btn-lg">Eliminar Cliente</button>
+        <!-- Modal -->
+        <div class="modal fade" id="MyModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                 <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Registrar Cliente</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                     </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <label class="form-label" for="nombre">Nombre</label>
+                            <input class="form-control" type="text" name="nombre" placeholder="Escribe tu nombre">
+                            <label class="form-label" for="Apaterno">Apaterno</label>
+                            <input class="form-control" type="text" name="Apaterno" placeholder="Escribe tu Ap paterno">
+                            <label class="form-label" for="Apaterno">Amaterno</label>
+                            <input class="form-control" type="text" name="Amaterno" placeholder="Escribe tu Ap materno">
+                            <label class="form-label" for="sex">Sexo</label>
+                            <select class="form-select" name="sex">
+                                <option value="n">Masculino</option>
+                                <option value="f">Femenino</option>
+                            </select>
+                            <label class="form-label" for="edad"></label>
+                            <input class="form-control" type="text" name="edad" placeholder="Escribe tu edad">
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../css/js/bootstrap.min.js"></script>
+</body>
+</html>
